@@ -1,0 +1,217 @@
+body {
+  background-color: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+  padding-top: 2rem;
+}
+h1 {
+  font-family: "Bodoni Moda", serif;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  color: #aaaaaa;
+  font-size: 1.2rem;
+  padding-top: 3.5rem;
+}
+li.list-items {
+  text-decoration: line-through #ff4e4e;
+}
+button {
+  background-color: #ff4e4e;
+  border-style: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.2rem;
+  margin: 5rem 4rem;
+  padding: 1.2rem 3rem;
+}
+button:hover {
+  background-color: white;
+  color: #ff8585;
+}
+hr {
+  background-color: #ff4e4e;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  height: 4px;
+  margin-top: 1.2rem;
+  margin-right: 70%;
+}
+#root {
+  position: absolute;
+}
+#nav-bar {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 20%;
+}
+#title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 2.5rem;
+  line-height: 1;
+  width: 50%;
+}
+#main {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 80%;
+}
+#heading {
+  float: left;
+  font-size: 3rem;
+  font-weight: 700;
+  order: 1;
+  margin: 5rem 0rem 9rem;
+  width: 60%;
+}
+#details {
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  order: 2;
+  padding: 8rem 8rem 3rem 3rem;
+  margin: 5rem 0rem 9rem;
+  width: 20%;
+}
+
+#menu-button {
+  display: none;
+}
+#close-button{
+    display: none;
+}
+.icon-btn {
+  display: none;
+}
+#image-section {
+    position: absolute;
+    width: 100%;
+  }
+.image-div {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 5px 10px 5px #888888;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem;
+  padding: 1.3rem;
+  text-align: center;
+}
+.image {
+  border-radius: 50%;
+  margin: 1rem;
+  height: 150px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+  button {
+    margin: 0 0 0 0.5rem;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #ff4e4e;
+    display: inline-block;
+    font-size: 2rem;
+  }
+  
+  span {
+    display: none;
+  }
+
+  #nav-bar {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  #nav-items {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+  }
+  #close-button{
+    color: white;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: 1rem;
+    position: absolute;
+    right: 25px;
+    top: 0;
+  }
+  #close-button:hover{
+    background: none;
+    color: #ff8585;
+  }
+  #title {
+    font-size: 1.3rem;
+    padding-left: 0;
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+  }
+  #main {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
+    width: 80%;
+  }
+
+  #heading {
+    font-size: 1.3rem;
+    margin: 0;
+    order: 1;
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  #details {
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    order: 3;
+    padding: 1rem;
+    width: 100%;
+  }
+  #image-section {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    order: 2;
+    position: inherit;
+  }
+  .image-div {
+    margin: 1rem 0.5rem 0.5rem;
+  }
+  .image {
+    border-radius: 50%;
+    margin: 1rem;
+    height: 120px;
+    width: 120px;
+  }
+  .icon-btn {
+    display: inline-block;
+  }
+  #menu-button {
+    display: inline-block;
+  }
+  .text-btn {
+    display: none;
+  }
+}

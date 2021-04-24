@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Inkoop</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="nav-bar">
+        <button id="menu-button" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div id="title">
+          <h1>Lorem <span>Ipsum</span></h1>
+        </div>
+        <div id="nav-items">
+          <button id="close-button" onclick="closeNav()">
+            <i class="fa fa-close"></i>
+          </button>
+          <ul>
+            <li class="list-items">About</li>
+            <li>Services</li>
+            <li>Cuisine</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+            <li>Book</li>
+          </ul>
+        </div>
+        <button class="cart-button">
+          <span class="text-btn">Cart</span>
+          <span class="icon-btn"><i class="fa fa-shopping-cart"></i></span>
+        </button>
+      </div>
+      <div id="main">
+        <div id="heading">
+          <h1>What are you having for Lunch?</h1>
+        </div>
+        <div id="details">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+          fermentum eros at blandit ullamcorper.
+          <hr />
+        </div>
+
+        <div id="image-section">
+          <div class="image-div">
+            <img
+              class="image"
+              src="https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-400,h-300,fo-auto"
+              alt="mexican_taco"
+            />
+            <p>Mexican Taco</p>
+          </div>
+          <div class="image-div">
+            <img
+              class="image"
+              src="https://whites-foodequip.co.uk/wp-content/uploads/2016/03/farmhouse-Pizza.jpg"
+              alt="farmhouse_pizza"
+            />
+            <p>Farmhouse Pizza</p>
+          </div>
+          <div class="image-div">
+            <img
+              class="image"
+              src="https://www.chicken.ca/wp-content/uploads/2020/09/Moist-Chicken-Burgers.jpg"
+              alt="chicken_burger"
+            />
+            <p>Chicken Burger</p>
+          </div>
+          <div class="image-div">
+            <img
+              class="image"
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/loaded-nachos-1590072354.jpg"
+              alt="loaded_nachos"
+            />
+            <p>Loaded nachos</p>
+          </div>
+          <div class="image-div">
+            <img
+              class="image"
+              src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2019/Veg_Hakka_Noodles_recipe_10.jpg"
+              alt="hakka_noodles"
+            />
+            <p>Hakka Noodles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
